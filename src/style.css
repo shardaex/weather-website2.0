@@ -1,12 +1,13 @@
 body {
-  background:
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
   overflow-x: hidden;
 }
-.left-side,.right-side {
+
+.left-side,
+.right-side {
   height: 100%;
   width: 50%;
   position: fixed;
@@ -14,7 +15,7 @@ body {
   top: 0;
   overflow-x: hidden;
   padding-top: 20px;
-} 
+}
 
 .left-side {
   background-color: darkslategray;
@@ -24,9 +25,8 @@ body {
 
 .right-side {
   background-color: white;
-  color:darkslategray;
+  color: darkslategray;
   right: 0;
-
 }
 .search_container {
   display: flex;
@@ -43,13 +43,11 @@ body {
   border-radius: 30px;
   position: absolute;
   top: 60%;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-    inset -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-   text-shadow:  0px 0px 6px rgba(255,255,255,.3),
-              -4px -4px 6px rgba(116, 125, 136, .2);
-
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    inset -7px -7px 10px 0px rgba(0, 0, 0, 0.1),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3),
+    -4px -4px 6px rgba(116, 125, 136, 0.2);
 }
 
 .search_box input {
@@ -86,16 +84,13 @@ input::placeholder {
 }
 .current .left {
   margin: 50px;
-  
 }
 .current .left .time {
   text-align: center;
   font-size: 40px;
 }
 
-
-
-.right .card .card-body{
+.right .card .card-body {
   background: none;
   padding: 20px;
   border: 2px solid white;
@@ -107,12 +102,10 @@ input::placeholder {
   top: 0;
   right: 0;
 
-box-shadow: 2px 2px 2px 0px rgba(255,255,255,.5),
-    -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    -7px -7px 10px 0px rgba(0, 0, 0, 0.1), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
-
 
 .current .right {
   margin: 50px;
@@ -132,17 +125,17 @@ box-shadow: 2px 2px 2px 0px rgba(255,255,255,.5),
   margin-left: 50px;
   font-size: 30px;
   padding: 20px;
-  color:darkslategray;
-}
-
-.card-body{
   color: darkslategray;
 }
 
-.today-area .title{
+.card-body {
+  color: darkslategray;
+}
+
+.today-area .title {
   text-align: center;
 }
-.today-area .today{
+.today-area .today {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -153,26 +146,26 @@ box-shadow: 2px 2px 2px 0px rgba(255,255,255,.5),
   width: 50%;
   left: 25%;
   padding: 20px;
-  
-  box-shadow: 2px 2px 2px 0px rgba(255,255,255,.5),
-     -7px -7px 10px 0px rgba(0,0,0,.1),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+
+  box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    -7px -7px 10px 0px rgba(0, 0, 0, 0.1), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.card-right, .card-left{
+.card-right,
+.card-left {
   margin: 0;
 }
 .card-right {
   border-left: 1px solid #ccc;
 }
 
-.today-temp{
+.today-temp {
   font-size: 30px;
 }
-.today-weather{
-  font-size: 25px;;
+.today-weather {
+  font-size: 25px;
 }
-.daily-area .title{
+.daily-area .title {
   text-align: center;
 }
 .daily-area .card {
@@ -186,18 +179,17 @@ box-shadow: 2px 2px 2px 0px rgba(255,255,255,.5),
   margin-top: 0;
 }
 
-.card-columns .card{
-  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2); 
+.card-columns .card {
+  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-.card-columns .card .card-body i{
+.card-columns .card .card-body i {
   font-size: 25px;
 }
-.card-columns .card .card-body .temp{
+.card-columns .card .card-body .temp {
   font-size: 20px;
 }
 
-.card-columns .card .card-body .day{
+.card-columns .card .card-body .day {
   font-size: 15px;
-
 }
