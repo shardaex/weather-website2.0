@@ -28,48 +28,15 @@
   <body>
     <div class="container">
       <div class="left-side">
-        <div class="search_container">
-          <form id="weather">
-            <div class="search_box">
-              <input type="text" id="search-input" placeholder="Enter city" />
-              <button id="search-button" type="subtmit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="current">
-          <div class="left">
-            <div class="time" id="time">
-              <p class="time" id="time"></p>
-              <p class="date" id="date"></p>
-            </div>
-          </div>
-          <div class="right">
-            <div class="card">
-              <div class="card-body">
-                <div class="current-location" id="current-location">
-                  <i class="fa-solid fa-location-dot"></i>Current Location
-                </div>
-                <div class="city" id="city"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="right-side">
         <div class="today-area">
           <div class="title">Today's weather</div>
           <div class="card">
             <div class="card-body">
               <div class="today">
                 <div class="card-left">
-                  <div class="today-temp">29°C</div>
-                  <div class="today-weather">
-                    <i class="fa-sharp fa-solid fa-sun"></i>
-                  </div>
-                  <div class="today-date">Saturday 25, feb'23</div>
+                  <div class="city" id="city"></div>
+                  <div class="today-temp"></div>
+                  <div class="today-date"></div>
                 </div>
                 <div class="card-right">
                   <div class="weather-items">
@@ -86,6 +53,19 @@
             </div>
           </div>
         </div>
+        <div class="search_container">
+          <form id="weather-form">
+            <div class="search_box">
+              <input type="text" id="search-input" placeholder="Enter city" />
+              <button id="search-button" type="subtmit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+          <button id="current-location-button">My Location</button>
+        </div>
+      </div>
+      <div class="right-side">
         <div class="daily-area">
           <div class="title">Daily Forecast</div>
           <div class="daily-forecast">
