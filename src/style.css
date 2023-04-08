@@ -177,8 +177,28 @@ input::placeholder {
 .today-temp {
   font-size: 30px;
 }
+.city {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.today-temp.units::after {
+  content: "°C";
+  position: relative;
+  top: -12px;
+  font-size: 6px;
+}
+
 .today-weather {
   font-size: 25px;
+}
+li {
+  list-style: none;
+}
+
+#forecast {
+  font-weight: 200;
+  font-size: 20px;
 }
 .daily-area .title {
   text-align: center;
