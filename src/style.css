@@ -228,3 +228,11 @@ li {
 .card-columns .card .card-body .day {
   font-size: 15px;
 }
+
+.repository-link {
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  width: 100%;
+  color: white;
+}
