@@ -32,6 +32,7 @@ function displayWeather(response) {
 
   document.querySelector(".today-temp").innerHTML =
     Math.round(response.data.main.temp) + "°C";
+
   document.querySelector(
     "#humidity"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
