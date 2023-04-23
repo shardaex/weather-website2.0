@@ -202,31 +202,7 @@ li {
 }
 .daily-area .title {
   text-align: center;
-}
-.daily-area .card {
-  padding: 0px;
-  position: flex;
-  border-radius: 30px;
-}
-
-.daily-area .card-body {
-  text-align: center;
-  margin-top: 0;
-}
-
-.card-columns .card {
-  box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
-}
-
-.card-columns .card .card-body i {
-  font-size: 25px;
-}
-.card-columns .card .card-body .temp {
-  font-size: 20px;
-}
-
-.card-columns .card .card-body .day {
-  font-size: 15px;
+  color: darkslategray;
 }
 
 .repository-link {
