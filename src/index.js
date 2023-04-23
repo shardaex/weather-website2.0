@@ -75,3 +75,5 @@ search.addEventListener("submit", toSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("Amsterdam");
