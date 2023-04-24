@@ -175,7 +175,7 @@ input::placeholder {
 }
 
 .today-temp {
-  font-size: 30px;
+  font-size: 40px;
 }
 .city {
   font-size: 20px;
@@ -205,6 +205,10 @@ li {
   color: darkslategray;
 }
 
+#icon {
+  height: 100px;
+  width: 100px;
+}
 .repository-link {
   position: absolute;
   bottom: 20px;

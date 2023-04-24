@@ -40,6 +40,12 @@ function displayWeather(response) {
     response.data.wind.speed
   )} km/h`;
   document.querySelector("#forecast").innerHTML = response.data.weather[0].main;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
@@ -77,26 +83,3 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Amsterdam");
-
-function displayForecast(response) {
-  let forecast = response.data.daily;
-
-  let forecastElement = document.querySelector(".daily-forecast .card-columns");
-
-  let forecastHTML = "";
-  forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
-      forecastHTML += `
-        <div class="card">
-          <div class="card-body">
-            <div class="day">${formatDay(forecastDay.dt)}</div>
-            
-            <div class="temp">${Math.round(forecastDay.temp.max)}°C</div>
-          </div>
-        </div>
-      `;
-    }
-  });
-
-  forecastElement.innerHTML = forecastHTML;
-}
